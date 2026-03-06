@@ -723,13 +723,13 @@ main{
     }
 
     .track {
-  display: flex;
-  gap: 16px; /* o JS lê isso e soma no passo */
-  will-change: transform;
-}
+        display: flex;
+        gap: 16px; /* o JS lê isso e soma no passo */
+        will-change: transform;
+    }
 
     .card{
-        min-width: 75vw;   /* ocupa 85% da largura da tela */
+        /*min-width: 75vw;*/   /* ocupa 85% da largura da tela */
         max-width: 85vw;
     }
 
@@ -748,13 +748,18 @@ main{
     #professores h2{
         font-size: 2rem;
     }
+
 }
 @media (max-width: 480px){
-        .card{
-            flex: 0 0 90%;
-            max-width: 90%;
+
+        .track-container{
+            overflow:hidden;
+            padding:0 10px;
+            max-width:100%;
         }
+
         .quadrado{
             max-width: 200px;
         }
+
     }
