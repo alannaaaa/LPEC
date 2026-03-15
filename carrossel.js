@@ -13,8 +13,9 @@ let visibleCount = 1;      // quantos cards aparecem na tela
 let isMoving = false;
 
 //====Navigation pelo teclado====
-document.querySelector('.carousel')
-.addEventListener('keydown', (e) => {
+document.addEventListener('keydown', (e) => {
+
+  if(e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") return; // evita conflito quando a pessoa digita em INPUT
 
   if (e.key === 'ArrowRight') {
     nextButton.click();
