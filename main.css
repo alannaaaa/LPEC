@@ -810,3 +810,22 @@ main{
     color: #ff6b35;
   }
 }
+
+/* =========================
+   SKIP LINK ACESSIBILIDADE
+   ========================= */
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    z-index: 9999;
+    border-radius: 6px;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
