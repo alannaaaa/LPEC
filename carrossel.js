@@ -226,6 +226,17 @@ const navLinks = document.querySelector("header ul");
 
 function toggleMenu() {
   navLinks.classList.toggle("active");
+
+  const isOpen = navLinks.classList.contains("active");
+
+  menuToggle.setAttribute("aria-expanded", isOpen);
+
+  menuToggle.setAttribute(
+    "aria-label",
+    isOpen
+      ? "Fechar menu de navegação"
+      : "Abrir menu de navegação"
+  );
 }
 
 //==== SWIPE NO CLL ====

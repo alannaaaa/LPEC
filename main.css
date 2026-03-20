@@ -50,10 +50,25 @@ header.hide{
   transform: translateY(-100%);
 }
 
-header img {
+.header-logo img {
     width: 80px;
     border-radius: 5%;
     margin-left: 30px;
+}
+
+/* NAV */
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+/* LISTA DO MENU */
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 ul{
@@ -100,6 +115,11 @@ header li{
     color: white;
     margin-right: 30px;
     cursor: pointer;
+
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
 }
 
 /* ==========================================================================
@@ -126,6 +146,10 @@ header li{
 .destaque h1{
     font-size: 3rem;
     font-weight: 700;
+}
+
+.destaque h1 span {
+    display: block; /* força quebra de linha */
 }
 
 /* Subtítulo/mensagem da seção destaque */
@@ -190,7 +214,7 @@ main{
     font-weight: 400;
 }
 
-#sobre h1{
+#sobre h2{
     color: #ff6b35;
     font-size: 60px;
     font-weight: 700;
@@ -246,7 +270,7 @@ main{
     margin-right: auto;
 }
 
-#projetos div h1{
+#projetos div h2{
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 30px;
@@ -559,15 +583,11 @@ main{
     margin: 0 auto;
 }
 
-.final h1{
+.final h2{
     font-weight: 700;
-    font-size: 45px;
+    font-size: 36px;
     text-align: center;
     margin-bottom: 5px;
-}
-.final h2{
-    font-weight: 400;
-    text-align: center;
 }
 
 .final a{
@@ -642,7 +662,7 @@ main{
         width: 100%;
     }
 
-    header ul{
+    header nav ul{
     position: absolute;
     top: 100%;
     right: 0;

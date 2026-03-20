@@ -21,28 +21,32 @@
 </head>
 <body>
     <header>
-        <article>       
-            <a href="https://engenhariadecomputacao.vercel.app/#"><img src="./components/image/logoCOMP.png" alt="logocurso"></a>
-        </article>
+        <div class="header-logo">       
+            <a href="https://engenhariadecomputacao.vercel.app/#">
+                <img src="./components/image/logoCOMP.png" alt="Logo do curso">
+            </a>
+        </div>
 
-        <aside>
+        <nav aria-label="Navegacao principal">
             <ul class="botao">
                 <li><a href="#" class="active">Início</a></li>
                 <li><a href="#sobre">Sobre o curso</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#professores">Professores</a></li>
             </ul>
-        </aside>
+        </nav>
 
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu de navegação" aria-expanded="false">☰</button>
     </header>
     
     <!--Destaque-->
 
     <section class="destaque">
         <div>
-            <h1>Descubra a Engenharia de<br>Computação Unifev</h1>
+            <h1>
+                <span class="linha1">Descubra a Engenharia de</span>
+                <span class="linha2">Computacao Unifev</span>
+            </h1>
             <p id="msg">Aprenda. Inove. Construa.</p>
             <a href="https://www.unifev.edu.br/curso/10/engenharia-de-computacao">Conheça o Curso</a>
         </div>
@@ -54,7 +58,7 @@
         <div class="about">
             <section id="sobre">
                 <div>
-                    <h1>Sobre o Curso</h1>
+                    <h2>Sobre o Curso</h2>
                 </div>
             </section>
             <section class="videosobre">
@@ -81,7 +85,7 @@
         <!--PROJETOS-->
         <section class="projects" id="projetos">
             <div>
-                <h1>Projetos</h1>
+                <h2>Projetos</h2>
             </div>
             <!--ENIAC-->
             <section class="eniac">
@@ -239,8 +243,8 @@
     
     <!--Final-->
     <section class="final">
-        <h1>Transforme código em impacto real</h1>
-        <h2>Nosso curso forma engenheiros para o futuro</h2>
+        <h2>Transforme suas ideias em projetos reais.</h2>
+        <h2>Aqui, seu código molda o futuro!</h2>
         <a href="https://www.unifev.edu.br/curso/10/engenharia-de-computacao">Junte-se a nós</a>
     </section>
 
